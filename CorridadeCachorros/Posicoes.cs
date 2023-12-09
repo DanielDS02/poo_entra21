@@ -7,3 +7,4 @@ public enum Posicoes
     Segundo = 2,
     Terceiro = 3
 }
+

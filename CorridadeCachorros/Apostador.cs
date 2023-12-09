@@ -10,6 +10,11 @@ public class Apostador : BaseModel
     public Apostador(int posicaoApostador) : base()
     {
         Saldo = VALOR_INICIAL_CORRIDA;
-        Nome = $"Apostador-{posicaoApostador}";
+        Nome = Console.ReadLine();
+    }
+
+    public Apostador()
+    {
+
     }
 }

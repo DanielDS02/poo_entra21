@@ -14,6 +14,12 @@ public class CorridaDeCachorro
     public Corredor Segundo { get; set; }
     public Corredor Terceiro { get; set; }
 
+    public Corredor Sonic { get; set; }
+    public Corredor Shadow { get; set; }
+    public Corredor Silver { get; set; }
+    public Corredor Tails { get; set; }
+
+
     public Premio PrimeiroPremio { get; set; }
     public Premio SegundoPremio { get; set; }
     public Premio TerceiroPremio { get; set; }
@@ -35,16 +41,8 @@ public class CorridaDeCachorro
 
         Apostadores = new List<Apostador>();
 
-        for (int i = 0; i < numeroDeApostadores; i++)
-        {
-            Apostadores.Add(new Apostador(i));
-        }
-
         Corredores = new List<Corredor>();
-        for (int i = 0; i < numeroDeCorredores; i++)
-        {
-            Corredores.Add(new Corredor(i));
-        }
+        
     }
 
     public void Apostar(Apostador apostador, Corredor corredor, double totalAposta)

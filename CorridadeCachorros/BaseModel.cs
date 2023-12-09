@@ -8,6 +8,6 @@ public abstract class BaseModel
     public BaseModel()
     {
         Id = Guid.NewGuid();
-        Nome = string.Empty;
+        this.nome = Nome
     }
 }
